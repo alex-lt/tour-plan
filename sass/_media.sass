@@ -5,8 +5,9 @@
     &-burger
       &-menu
         display: none
-  .slider
-    width: 590px
+  .hotel
+    &-slider
+      width: 590px
 
   .swiper
     &-slide
@@ -33,8 +34,9 @@
       margin-bottom: 30px
     &-draggable
       flex-direction: row
-  .slider
-    width: 100%
+    &-slider
+      width: 100%
+  
   .booking
     width: 340px
   .map
@@ -42,7 +44,10 @@
   .newsletter
     &-wrapper
       width: 700px
-  
+  .reviews
+    &-slider
+      &__item
+        max-width: 579px
 
 
 
@@ -92,8 +97,9 @@
         width: 100%
       &-name
         flex-basis: 100%
-  .slider
-    height: 350px
+    &-slider
+      height: 350px
+  
   .hotel
     &-draggable
       flex-direction: column
@@ -113,15 +119,36 @@
       &__strong
         font-size: 30px
         line-height: 38px
+
+  .reviews
+    &-slider
+      &__item
+        width: 100%
+        padding: 0 30px 30px
+        &::after, &::before
+          display: none
+      &__button
+        top: 32px
+        &--prev
+          margin-left: -95px
+          left: 50%
+          transform: translate(-50%, 0)
+        &--next
+          margin-right: -95px
+          right: 50%
+          transform: translate(50%, 0)
+    &-title
+      font-size: 18px
+      line-height: 23px
       
 @media (max-width: 576px) 
   .logo
     width: 99px 
-  .slider
-    height: 250px
   .hotel
     &__slider
       margin-bottom: 20px
+    &-slider
+      height: 250px
   .subscribe
     width: 100% !important
   .newsletter
