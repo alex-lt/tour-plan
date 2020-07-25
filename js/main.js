@@ -14,3 +14,5 @@ var mySwiper = new Swiper('.swiper-container', {
   },
 
 });
+
+$('.parallax-window').parallax({imageSrc: 'img/newsletter.jpg'});
