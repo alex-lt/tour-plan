@@ -800,6 +800,7 @@ img {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
+  border: none;
 }
 
 @media (max-width: 1200px) {
