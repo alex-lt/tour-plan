@@ -802,7 +802,12 @@ img {
   height: 213px;
   border-radius: 10px;
   overflow: hidden;
-  border: none;
+}
+
+.map__style {
+  border: 0;
+  width: 100%;
+  height: 213px;
 }
 
 .newsletter {
