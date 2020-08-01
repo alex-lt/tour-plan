@@ -821,6 +821,7 @@ img {
   line-height: 45px;
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 65px;
 }
 
 .packages-card {
@@ -1532,6 +1533,7 @@ img {
   .packages-title {
     font-size: 18px;
     line-height: 23px;
+    margin-bottom: 30px;
   }
   .packages-card {
     -ms-grid-rows: (450px)[3];
