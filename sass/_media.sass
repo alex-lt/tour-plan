@@ -26,6 +26,10 @@
       &__wrapper
         padding: 20px 15px
 
+  .footer
+    &__input
+      flex-basis: 100%
+
 @media (max-width: 992px)
   .container
     width: 700px
@@ -73,6 +77,45 @@
       grid-template: repeat(3, 500px)/repeat(2, 340px)
 
 
+  .footer
+    padding: 73px 0 33px 0
+    &-wrapper
+      grid-template-columns: repeat(3, minmax(max-content, 1fr))
+      rid-auto-rows: minmax(56px, min-content)
+      margin-bottom: 56px
+    &__logo
+      grid-column-start: 1
+      grid-row: 1 / 2
+    &__lists
+      &--categories
+        grid-row-start: 3
+      &--additional
+        grid-row-start: 3
+        grid-column-start: 2
+      &--network
+        grid-column: span 2
+        display: flex
+        align-self: center
+      &--legal
+        grid-column-start: 3
+        grid-row-start: 3
+        justify-self: end
+      &--contact
+        grid-column-start: 1
+        grid-column-end: 3
+        grid-row-start: 5
+    &__form
+      grid-column: 1 / 3
+      grid-row-start: 7
+    &__input
+      flex-basis: 48%
+
+    &__bot
+      grid-template-columns: repeat(6, minmax(min-content, 1fr))
+      &-list
+        grid-column: 1 / 4
+      &-payment
+        grid-column: 5 / 7
 
 
 
@@ -190,6 +233,64 @@
       &__text
         margin-top: 0
         margin-bottom: 10px
+
+  .footer
+    padding: 69px 0 21px 0
+    &-wrapper
+      grid-template-columns: minmax(max-content, 1fr)
+      grid-auto-rows: minmax(30px, min-content)
+      margin-bottom: 30px
+    &__logo
+      grid-row-start: 1
+      grid-column-start: 1
+    &__lists
+      &--categories
+        grid-row-start: 9
+        grid-column-start: 1
+      &--additional
+        grid-row-start: 7
+        grid-column-start: 1
+      &--network
+        grid-row-start: 3
+        grid-column-start: 1
+        display: 
+      &--legal
+        grid-row-start: 5
+        grid-column-start: 1
+        justify-self: start
+      &--contact
+        grid-row-start: 11
+        grid-column-start: 1
+    &__form
+      grid-row-start: 13
+      grid-column-start: 1
+    &__form-wrapper
+      display: grid
+      grid-template-columns: minmax(min-content, 1fr)
+      grid-auto-rows: minmax(15px, min-content)
+    &__input
+      flex-basis: 100%
+      &--name
+        grid-row-start: 1
+      &--phone
+        grid-row-start: 2
+    &__textarea
+      grid-row-start: 3
+      margin-bottom: 0
+    &__form-info
+      grid-row-start: 5
+    &__button
+      grid-row-start: 7
+      max-width: 160px
+    &__bot
+      grid-template-columns: minmax(min-content, 1fr)
+      &-list
+        grid-row-start: 1
+        grid-column-start: 1
+      &-payment
+        grid-row-start: 2
+        grid-column-start: 1
+        justify-self: start
  
 @media (max-width: 604px)
   .packages
