@@ -471,6 +471,10 @@ img {
   position: relative;
 }
 
+.navbar-menu__item--mobile--visible {
+  display: none;
+}
+
 .navbar-menu__link {
   text-decoration: none;
   text-transform: uppercase;
@@ -1760,14 +1764,68 @@ img {
   .container {
     width: 90%;
   }
+  body {
+    padding-top: 78px;
+  }
+  .navbar--mobile--fixed {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 99;
+  }
   .navbar-bottom {
     display: none;
+    position: fixed;
+    left: 0;
+    top: 78px;
+    right: 0;
+    bottom: 0;
   }
-  .navbar__search {
+  .navbar-bottom--visible {
+    display: block;
+  }
+  .navbar-menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .navbar-menu--mobile--pt-32 {
+    padding-top: 32px;
+  }
+  .navbar-menu__item {
+    margin-bottom: 20px;
+  }
+  .navbar-menu__item--mobile--mb-27 {
+    margin-bottom: 27px;
+  }
+  .navbar-menu__item--mobile--mb-39 {
+    margin-bottom: 39px;
+  }
+  .navbar-menu__item--mobile--visible {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navbar__search--mobile--hidden {
     display: none;
   }
   .navbar__user {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .navbar__user--mobile--hidden {
     display: none;
+  }
+  .user__name {
+    margin-left: 0;
+    margin-top: 10px;
   }
   .button-menu {
     display: -webkit-box;
@@ -1902,8 +1960,8 @@ img {
   }
   .packages-card {
     -ms-grid-rows: (450px)[3];
-    -ms-grid-columns: (50%)[2];
-        grid-template: repeat(3, 450px)/repeat(2, 50%);
+    -ms-grid-columns: (49%)[2];
+        grid-template: repeat(3, 450px)/repeat(2, 49%);
     grid-gap: 10px;
   }
   .packages-card__rating {
@@ -2086,6 +2144,9 @@ img {
     font-size: 8px;
     line-height: 10px;
     min-width: 60px;
+  }
+  .search__input {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */
