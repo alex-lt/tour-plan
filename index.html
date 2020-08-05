@@ -437,9 +437,9 @@
           Newsletter
         </span>
       </h2>
-      <form action="#" class="subscribe newsletter__subscribe">
-        <input type="text" placeholder="Your email address" class="subscribe__input">
-        <button class="button subscribe__button">
+      <form id="newsletter-form" action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <input type="text" placeholder="Your email address" class="subscribe__input" name="email">
+        <button type="submit" class="button subscribe__button">
           Send
         </button>
       </form>
@@ -734,13 +734,13 @@
 
         <div class="footer__form">
           <h3 class="footer__title footer__title--form">Send us a message</h3>
-          <div class="footer__form-wrapper">
-            <input class="footer__input footer__input--name" type="text" placeholder="Your Full Name*">
-          <input class="footer__input footer__input--phone" type="text" placeholder="Phone Number*">
-          <textarea class="footer__textarea" cols="30" rows="10" placeholder="Message"></textarea>
-          <button class="button footer__button">Send</button>
-          <span class="footer__form-info">* Required Fields</span>
-          </div>
+          <form id="footer-form" action="send.php" method="POST" class="footer__form-wrapper">
+            <input class="footer__input footer__input--name" type="text" placeholder="Your Full Name*" name="name">
+            <input class="footer__input footer__input--phone" type="text" placeholder="Phone Number*" name="phone">
+            <textarea class="footer__textarea" placeholder="Message" name="message"></textarea>
+            <button class="button footer__button" type="submit">Send</button>
+            <span class="footer__form-info">* Required Fields</span>
+          </form>
         </div>
         <!-- /.footer__form -->
 
@@ -759,7 +759,7 @@
             <a href="#" class="footer__bot-link">Cancellation policy</a>
           </li>
         </ul>
-        <img src="img/payment.png" alt="Icon: payment" class="footer__bot-payment">
+        <img src="img/payment.png" alt="Icon: payment" class="footer__bot-payment footer__bot-payment--mt-10">
       </div>
     </div>
     <!-- /.container -->

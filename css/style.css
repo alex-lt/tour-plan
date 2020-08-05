@@ -1504,6 +1504,7 @@ img {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 43px;
+  height: 140px;
 }
 
 .footer__textarea::-webkit-input-placeholder {
@@ -2082,6 +2083,9 @@ img {
         grid-column-start: 1;
     -ms-grid-column-align: start;
         justify-self: start;
+  }
+  .footer__bot-payment--mt-10 {
+    margin-top: 10px;
   }
 }
 
