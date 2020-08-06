@@ -195,7 +195,7 @@
               </a>
             </div>
             <!-- /.call-center -->
-            <button class="button booking__button">View Other Options</button> 
+            <button data-toggle="modal" class="button booking__button">View Other Options</button> 
             <!-- /.booking-button -->
   
           </div>
@@ -772,7 +772,7 @@
     <div class="modal-dialog">
       <h3 class="modal-dialog__title modal-dialog__title--form">Send us a message</h3>
       <form action="send.php" method="POST" class="modal-dialog__form">
-        <a href="#" class="modal-dialog__close">
+        <a href="#" class="modal-dialog__close" data-backdrop="static" data-keyboard="false" tabindex="-1" data-keyboard="true">
           <img src="img/close.svg" alt="icon: close" class="modal-dialog__close-image">
         </a>
         <input class="input modal-dialog__input modal-dialog__input--name" type="text" placeholder="Your Full Name*" name="name">
