@@ -1,0 +1,48 @@
+.modal
+  &-overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: rgba(0, 143, 223, 0.39)
+    z-index: 100
+  &-dialog
+    max-width: 478px
+    min-height: 478px
+    padding: 33px 88px
+    background-color: $dark
+    color: $color-text-light
+    border-radius: 8px
+    position: fixed
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    z-index: 101
+    &__close-image
+      position: absolute
+      top: 18px
+      right: 18px
+    &__title
+      font-style: normal
+      font-weight: bold
+      font-size: 18px
+      line-height: 23px
+      text-transform: uppercase
+      text-align: center
+      margin-bottom: 15px
+    &__form
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+    &__input
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__textarea
+      flex-basis: 100%
+      margin-bottom: 15px
+    &__button
+      max-width: 160px
+    &__form-info
+
+      
