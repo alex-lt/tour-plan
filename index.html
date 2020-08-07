@@ -12,7 +12,7 @@
   <header class="navbar navbar--mobile--fixed">
     <div class="container">
       <div class="navbar-top">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
           <img src="img/horizontal.svg" alt="Logo: Best Tour Plan" class="logo__image">
         </a>
 
@@ -437,8 +437,8 @@
           Newsletter
         </span>
       </h2>
-      <form id="newsletter-form" action="send.php" method="POST" class="subscribe newsletter__subscribe">
-        <input type="text" placeholder="Your email address" class="subscribe__input" name="email">
+      <form id="newsletter-form form" action="send.php" method="POST" class="subscribe newsletter__subscribe">
+        <input type="email" placeholder="Your email address" class="subscribe__input" name="email" required>
         <button type="submit" class="button subscribe__button">
           Send
         </button>
@@ -734,9 +734,13 @@
 
         <div class="footer__form">
           <h3 class="footer__title footer__title--form">Send us a message</h3>
-          <form id="footer-form" action="send.php" method="POST" class="footer__form-wrapper">
-            <input class="input footer__input footer__input--name" type="text" placeholder="Your Full Name*" name="name">
-            <input class="input footer__input footer__input--phone" type="text" placeholder="Phone Number*" name="phone">
+          <form action="send.php" method="POST" class="footer__form-wrapper form">
+            <div class="footer__input-group">
+              <input class="input footer__input footer__input--name" type="text" placeholder="Your Full Name*" name="name" required minlength="2">
+            </div>
+            <div class="footer__input-group">
+              <input class="input footer__input footer__input--phone phone-mask" type="tel" placeholder="Phone Number*" name="phone" required>
+            </div>
             <textarea class="textarea footer__textarea" placeholder="Message" name="message"></textarea>
             <button class="button form-button footer__button" type="submit">Send</button>
             <span class="form-info footer__form-info">* Required Fields</span>
@@ -771,13 +775,13 @@
 
     <div class="modal-dialog">
       <h3 class="modal-dialog__title modal-dialog__title--form">Send us a message</h3>
-      <form action="send.php" method="POST" class="modal-dialog__form">
+      <form action="send.php" method="POST" class="modal-dialog__form form">
         <a href="#" class="modal-dialog__close" data-backdrop="static" data-keyboard="false" tabindex="-1" data-keyboard="true">
           <img src="img/close.svg" alt="icon: close" class="modal-dialog__close-image">
         </a>
-        <input class="input modal-dialog__input modal-dialog__input--name" type="text" placeholder="Your Full Name*" name="name">
-        <input class="input modal-dialog__input modal-dialog__input--phone" type="text" placeholder="Phone Number*" name="phone">
-        <input class="input modal-dialog__input modal-dialog__input--name" type="text" placeholder="Email*" name="email">
+        <input class="input modal-dialog__input modal-dialog__input--name" type="text" placeholder="Your Full Name*" name="name" required minlength="2">
+        <input class="input modal-dialog__input modal-dialog__input--phone phone-mask" type="tel" placeholder="Phone Number*" name="phone" required>
+        <input class="input modal-dialog__input modal-dialog__input--email" type="email" placeholder="Email*" name="email" required>
         <textarea class="textarea modal-dialog__textarea" placeholder="Message" name="message"></textarea>
         <button class="button form-button modal-dialog__button" type="submit">Send</button>
         <span class="form-info modal-dialog__form-info">* Required Fields</span>
@@ -788,6 +792,8 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.js-1.5.0/parallax.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="js/main.js"></script>

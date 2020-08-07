@@ -436,6 +436,30 @@ img {
       align-self: center;
 }
 
+.validate {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 13px;
+  color: #EC1F46;
+}
+
+.validate::-webkit-input-placeholder {
+  color: #EC1F46;
+}
+
+.validate:-ms-input-placeholder {
+  color: #EC1F46;
+}
+
+.validate::-ms-input-placeholder {
+  color: #EC1F46;
+}
+
+.validate::placeholder {
+  color: #EC1F46;
+}
+
 .navbar-top {
   background-color: #FFFFFF;
   display: -webkit-box;
@@ -1536,14 +1560,18 @@ img {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   -ms-flex-preferred-size: 48%;
       flex-basis: 48%;
-  margin-bottom: 15px;
 }
 
 .footer__textarea {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: 15px;
   margin-bottom: 43px;
 }
 
@@ -1664,12 +1692,17 @@ img {
 .modal-dialog__input {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.modal-dialog__input--name {
+  margin-top: 0;
 }
 
 .modal-dialog__textarea {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
+  margin-top: 15px;
   margin-bottom: 15px;
 }
 
@@ -1706,7 +1739,10 @@ img {
   .packages-card__wrapper {
     padding: 20px 15px;
   }
-  .footer__input {
+  .footer__input--phone {
+    margin-top: 15px;
+  }
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
@@ -1828,7 +1864,10 @@ img {
     -ms-grid-row: 7;
         grid-row-start: 7;
   }
-  .footer__input {
+  .footer__input--phone {
+    margin-top: 0;
+  }
+  .footer__input-group {
     -ms-flex-preferred-size: 48%;
         flex-basis: 48%;
   }
@@ -2153,7 +2192,10 @@ img {
     grid-auto-rows: minmax(15px, -webkit-min-content);
     grid-auto-rows: minmax(15px, min-content);
   }
-  .footer__input {
+  .footer__input--phone {
+    margin-top: 15px;
+  }
+  .footer__input-group {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
   }
