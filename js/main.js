@@ -18,7 +18,7 @@ $(document).ready(function(){
   });
   
   
-  $('.parallax-window').parallax({imageSrc: 'img/newsletter.jpg'});
+  $('.parallax-window').parallax({imageSrc: 'img/newsletter.jpg'},);
   
   
   var reviewslSlider = new Swiper('.reviews-slider', {
@@ -77,7 +77,7 @@ $(document).ready(function(){
 
   //modal-validation
 
-  $(".form").each(function(){
+  $(".form").each( function(){
     $(this).validate({
       errorClass: "validate",
       messages: {
@@ -101,8 +101,13 @@ $(document).ready(function(){
     $('.phone-mask').mask('+7 (000) 000-00-00', {placeholder: "+7 (999) 999-99-99"});
   });
 
-
   AOS.init();
 
+  //lazy load map
+  
+
+
+  // lazy load img
+ 
 });
 
