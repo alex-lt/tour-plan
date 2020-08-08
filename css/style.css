@@ -439,7 +439,7 @@ img {
 .validate {
   font-style: normal;
   font-weight: normal;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 13px;
   color: #EC1F46;
 }
@@ -2245,6 +2245,7 @@ img {
   }
   .modal-dialog {
     padding: 33px 40px;
+    min-height: 435px;
   }
   .modal-dialog__form {
     display: -webkit-box;
@@ -2255,8 +2256,13 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .modal-dialog__input {
+    min-height: 40px;
+  }
   .modal-dialog__button {
+    min-height: 40px;
     width: 100%;
+    padding: 0;
   }
   .modal-dialog__form-info {
     -ms-flex-item-align: start;
