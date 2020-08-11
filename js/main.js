@@ -52,7 +52,8 @@ $(document).ready(function(){
   modalButton.on("click", openModal);
   modalCloseButton.on("click", closeModal);
   
-  function openModal(){
+  function openModal(event){
+    event.stopPropagation();
     var modalOverlay = $(".modal-overlay");
     var modalDialog = $(".modal-dialog");
     modalOverlay.addClass('modal-overlay--visible');
@@ -67,6 +68,8 @@ $(document).ready(function(){
     modalDialog.removeClass('modal-dialog--visible');
   }
   
+
+
   $(document).keyup(function(event){
     if(event.which=='27'){
         $('.modal-overlay').removeClass('modal-overlay--visible');
@@ -98,20 +101,14 @@ $(document).ready(function(){
 
   //phone Mask
   $(document).ready(function(){
-    $('.phone-mask').mask('+7 (000) 000-00-00', {placeholder: "+7 (999) 999-99-99"});
+    $('.phone-mask').mask('+7 (000) 000-00-00');
   });
 
-  AOS.init();
-
-  // lazy load img
- 
-  function init() {
-    var imgDefer = document.getElementsByTagName('img');
-    for (var i=0; i<imgDefer.length; i++) {
-    if(imgDefer[i].getAttribute('data-src')) {
-    imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
-    } } }
-    window.onload = init;
+  function onMouseOverOverlay(over){
+    document.getElementsByTagName("body")[0].style.overflowY = (over?"hidden":"scroll");
+    document.getElementsByTagName("html")[0].style.position = (over?"fixed":"static");
+    document.getElementsByTagName("html")[0].style.height = (over?"100%":"auto");
+  } 
 
 });
 

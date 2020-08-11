@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Muli:wght@400;700&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-  <link href="css/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
@@ -13,44 +12,47 @@
 </head>
 <body>
   <header class="navbar navbar--mobile--fixed">
-    <div class="container">
-      <div class="navbar-top">
-        <a href="index.html" class="logo">
-          <img src="img/horizontal.svg" alt="Logo: Best Tour Plan" class="logo__image">
-        </a>
-
-        <form action="#" class="search navbar__search navbar__search--mobile--hidden">
-          <input type="text" placeholder="Search Location" class="search__input">
-          <button class="button search__button">
-            <img src="img/search.svg" alt="Search: 
-            magnifier" class="search__image">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <div class="navbar-top">
+          <a href="index.html" class="logo">
+            <img src="img/horizontal.svg" alt="Logo: Best Tour Plan" class="logo__image">
+          </a>
+  
+          <form action="#" class="search navbar__search navbar__search--mobile--hidden">
+            <input type="text" placeholder="Search Location" class="search__input">
+            <button class="button search__button">
+              <img src="img/search.svg" alt="Search: 
+              magnifier" class="search__image">
+            </button>
+          </form>
+  
+          <div class="user navbar__user navbar__user--mobile--hidden">
+            <img src="img/avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+            <span class="user__name">Nathan</span>
+          </div>
+  
+          <button class="button button-menu navbar-top__button-menu">
+            <span class="button-menu__line"></span>
+            <span class="button-menu__line"></span>
+            <span class="button-menu__line"></span>
           </button>
-        </form>
-
-        <div class="user navbar__user navbar__user--mobile--hidden">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
-          <span class="user__name">Nathan</span>
+          <!-- /.navbar-button -->
+  
         </div>
-
-        <button class="button button-menu navbar-top__button-menu">
-          <span class="button-menu__line"></span>
-          <span class="button-menu__line"></span>
-          <span class="button-menu__line"></span>
-        </button>
-        <!-- /.navbar-button -->
-
+        <!-- /.navbar-top -->
+  
       </div>
-      <!-- /.navbar-top -->
-
+      <!-- /.container -->
     </div>
-    <!-- /.container -->
+    <!-- /.navbar-wrapper -->
 
     <div class="navbar-bottom">
       <div class="container">
         <ul class="navbar-menu navbar-menu--mobile--pt-32">
           <li class="navbar-menu__item navbar-menu__item--mobile--visible navbar-menu__item--mobile--mb-27">
             <div class="user navbar__user">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
+              <img src="img/avatar.jpg" alt="Avatar: Nathan" class="user__avatar">
               <span class="user__name">Nathan</span>
             </div>
           </li>
@@ -58,7 +60,7 @@
             <form action="#" class="search navbar__search">
               <input type="text" placeholder="Search Location" class="search__input">
               <button class="button search__button">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/search.svg" alt="Search: 
+                <img src="img/search.svg" alt="Search: 
                 magnifier" class="search__image">
               </button>
             </form>
@@ -119,11 +121,11 @@
         <div class="hotel-info__text">
           <div class="hotel-wrapper">
             <div class="stars">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
             </div>
             <h1 class="hotel-info-name">GRAND HILTON HOTEL</h1>
             <span class="offer hotel-info__offer">Flash Offer</span>
@@ -133,7 +135,7 @@
         <!-- /.hotrl-info__text -->
         <div class="rating hotel-info__rating">
           <span class="rating__text">User Rattings</span>
-          <span class="rating__counter">4.5/5</span>
+          <span class="rating__counter">4.5/<span class="rating__counter--small">5</span></span>
         </div>
         <!-- /.hotel-info__rating -->
       </div>
@@ -143,22 +145,22 @@
           <div class="swiper-container hotel-slider hotel__slider">
             <div class="swiper-wrapper">
                 <div class="swiper-slide hotel-slider__item">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1021/img/slide-1.jpg" alt="" class="swiper-slide__image">
+                  <img src="//cdn.optipic.io/site-1022/img/slide-1.jpg" alt="" class="swiper-slide__image">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1021/img/slide-2.jpg" alt="" class="swiper-slide__image">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/slide-2.jpeg" alt="" class="swiper-slide__image lazyload">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1021/img/slide-3.jpg" alt="" class="swiper-slide__image">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/slide-3.jpeg" alt="" class="swiper-slide__image lazyload">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1021/img/slide-4.jpg" alt="" class="swiper-slide__image">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/slide-4.jpeg" alt="" class="swiper-slide__image lazyload">
                 </div>
-                <div class="swiper-slide hotel-slider__item lazy">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1021/img/slide-5.jpg" alt="" class="swiper-slide__image">
+                <div class="swiper-slide hotel-slider__item lazyload">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/slide-5.jpeg" alt="" class="swiper-slide__image lazyload">
                 </div>
                 <div class="swiper-slide hotel-slider__item">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1021/img/slide-6.jpg" alt="" class="swiper-slide__image">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/slide-6.jpeg" alt="" class="swiper-slide__image lazyload">
                 </div>
             </div>
             <button class="button hotel-slider__button hotel-slider__button--prev"></button>
@@ -178,11 +180,11 @@
               <!-- /.booking__price -->
               <div class="booking__person-room">
                 <div class="booking__text">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user.svg" alt="" class="booking__image">
+                  <img src="img/user.svg" alt="" class="booking__image">
                   <span class="booking__description">2 x Guests</span>
                 </div>
                 <div class="booking__text">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/home.svg" alt="" class="booking__image">
+                  <img src="img/home.svg" alt="" class="booking__image">
                   <span class="booking__description">1 x Room</span>
                 </div>
               </div>
@@ -193,7 +195,7 @@
             <div class="call-center">
               <span class="call-center__text">Quick Booking</span>
               <a href="tel:12100" class="call-center__phone">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/phone-call.svg" alt="" class="call-center__image">
+                <img src="img/phone-call.svg" alt="" class="call-center__image">
                 <span class="call-center__number">12100</span>
               </a>
             </div>
@@ -205,7 +207,7 @@
           <!-- /.booking -->
 
           <div class="map" id="map">
-            <iframe class="map__style" data-iframely-url="https://www.google.com/maps/embed?AIzaSyBt8Jmg6IyovqpSoQh-eMVkS9Gjkv6GAvc&amp;pb=!1m18!1m12!1m3!1d2195.308427491351!2d1.4351197047331992!3d38.909462423244335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x129946b0bdd36927%3A0x8b45654807767c7e!2sGran%20Hotel%20Montesol%20Ibiza%2C%20Curio%20Collection%20by%20Hilton!5e0!3m2!1sru!2sru!4v1595439368213!5m2!1sru!2sru"  allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <iframe class="map__style lazyload" ></iframe>
           </div>
           <!-- /.map -->
 
@@ -227,16 +229,16 @@
 
         <div class="packages-card__item packages-card__item--large">
           <div class="packages-card__offer">
-            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-1.jpg" alt="Hotel Blue Haven" class="packages-card__image">
+            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="//cdn.optipic.io/site-1022/img/packages-1.jpg" alt="Hotel Blue Haven" class="packages-card__image lazyload">
             <span class="packages-card__flash-offer packages-card__flash-offer--large">Flash Offer</span>
           </div>
           <div class="packages-card__wrapper">
             <div class="packages-card__rating">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
+              <img src="img/star.svg" alt="star" class="star-img">
             </div>
             <h3 class="packages-card__title">Hotel Blue Haven</h3>
             <p class="packages-card__text">
@@ -244,15 +246,15 @@
             </p>
             <div class="packages-card__person-room">
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/map-pin.svg" alt="map" class="packages-card__icon">
+                <img src="img/map-pin.svg" alt="map" class="packages-card__icon">
                 <span class="packages-card__description">1749 Wheeler Ridge  Delaware</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user.svg" alt="person" class="packages-card__icon">
+                <img src="img/user.svg" alt="person" class="packages-card__icon">
                 <span class="packages-card__description">2 x Guests</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/home.svg" alt="Room" class="packages-card__icon">
+                <img src="img/home.svg" alt="Room" class="packages-card__icon">
                 <span class="packages-card__description">1 x Room</span>
               </div>
             </div>
@@ -275,22 +277,22 @@
 
         <div class="packages-card__item">
           <div class="packages-card__offer">
-            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-3.jpg" alt="LUX* Belle Mare" class="packages-card__image">
+            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-3.jpg" alt="LUX* Belle Mare" class="packages-card__image lazyload">
             <span class="packages-card__flash-offer">Flash Offer</span>
           </div>
           <div class="packages-card__wrapper">
             <h3 class="packages-card__title">LUX* Belle Mare</h3>
             <div class="packages-card__person-room">
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/map-pin.svg" alt="map" class="packages-card__icon">
+                <img src="img/map-pin.svg" alt="map" class="packages-card__icon">
                 <span class="packages-card__description">1749 Wheeler Ridge  Delaware</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user.svg" alt="person" class="packages-card__icon">
+                <img src="img/user.svg" alt="person" class="packages-card__icon">
                 <span class="packages-card__description">2 x Guests</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/home.svg" alt="Room" class="packages-card__icon">
+                <img src="img/home.svg" alt="Room" class="packages-card__icon">
                 <span class="packages-card__description">1 x Room</span>
               </div>
             </div>
@@ -313,22 +315,22 @@
 
         <div class="packages-card__item">
           <div class="packages-card__offer">
-            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-4.jpg" alt="White Palace" class="packages-card__image">
+            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-4.jpg" alt="White Palace" class="packages-card__image lazyload">
             <span class="packages-card__flash-offer">Flash Offer</span>
           </div>
           <div class="packages-card__wrapper">
             <h3 class="packages-card__title">White Palace</h3>
             <div class="packages-card__person-room">
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/map-pin.svg" alt="map" class="packages-card__icon">
+                <img src="img/map-pin.svg" alt="map" class="packages-card__icon">
                 <span class="packages-card__description">1749 Wheeler Ridge  Delaware</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user.svg" alt="person" class="packages-card__icon">
+                <img src="img/user.svg" alt="person" class="packages-card__icon">
                 <span class="packages-card__description">2 x Guests</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/home.svg" alt="Room" class="packages-card__icon">
+                <img src="img/home.svg" alt="Room" class="packages-card__icon">
                 <span class="packages-card__description">1 x Room</span>
               </div>
             </div>
@@ -351,22 +353,22 @@
 
         <div class="packages-card__item">
           <div class="packages-card__offer">
-            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-5.jpg" alt="Luxury Place" class="packages-card__image">
+            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-5.jpg" alt="Luxury Place" class="packages-card__image lazyload">
             <span class="packages-card__flash-offer">Flash Offer</span>
           </div>
           <div class="packages-card__wrapper">
             <h3 class="packages-card__title">Luxury Place</h3>
             <div class="packages-card__person-room">
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/map-pin.svg" alt="map" class="packages-card__icon">
+                <img src="img/map-pin.svg" alt="map" class="packages-card__icon">
                 <span class="packages-card__description">1749 Wheeler Ridge  Delaware</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user.svg" alt="person" class="packages-card__icon">
+                <img src="img/user.svg" alt="person" class="packages-card__icon">
                 <span class="packages-card__description">2 x Guests</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/home.svg" alt="Room" class="packages-card__icon">
+                <img src="img/home.svg" alt="Room" class="packages-card__icon">
                 <span class="packages-card__description">1 x Room</span>
               </div>
             </div>
@@ -389,22 +391,22 @@
 
         <div class="packages-card__item">
           <div class="packages-card__offer">
-            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-6.jpg" alt="Hotel Five Star" class="packages-card__image">
+            <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/packages-6.jpg" alt="Hotel Five Star" class="packages-card__image lazyload">
             <span class="packages-card__flash-offer">Flash Offer</span>
           </div>
           <div class="packages-card__wrapper">
             <h3 class="packages-card__title">Hotel Five Star</h3>
             <div class="packages-card__person-room">
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/map-pin.svg" alt="map" class="packages-card__icon">
+                <img src="img/map-pin.svg" alt="map" class="packages-card__icon">
                 <span class="packages-card__description">1749 Wheeler Ridge  Delaware</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/user.svg" alt="person" class="packages-card__icon">
+                <img src="img/user.svg" alt="person" class="packages-card__icon">
                 <span class="packages-card__description">2 x Guests</span>
               </div>
               <div class="packages-card__info">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/home.svg" alt="Room" class="packages-card__icon">
+                <img src="img/home.svg" alt="Room" class="packages-card__icon">
                 <span class="packages-card__description">1 x Room</span>
               </div>
             </div>
@@ -432,7 +434,7 @@
   </section>
   <!-- /.packages -->
 
-  <section data-parallax="scroll" data-image-src="img/newsletter.jpg" class="newsletter parallax-window">
+  <section data-parallax="scroll" data-image-src="img/newsletter.jpg"  class="newsletter parallax-window lazyload">
     <div class="newsletter-wrapper">
       <h2 class="newsletter-title">
         subscribe to our
@@ -463,11 +465,11 @@
                   <h3 class="reviews-slider__username">Megan Fox</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
                   </div>
                 </div>
                 <!-- /.reviews-slider__profile -->
@@ -484,15 +486,15 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/rewiews-avatar-2.jpg" alt="Avatar: Seely Both" class="reviews-slider__avatar">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/rewiews-avatar-2.jpg" alt="Avatar: Seely Both" class="reviews-slider__avatar lazyload">
                   <h3 class="reviews-slider__username">Seely Both</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
                   </div>
                 </div>
                 <!-- /.reviews-slider__profile -->
@@ -509,15 +511,15 @@
             <div class="swiper-slide">
               <div class="reviews-slider__item">
                 <div class="reviews-slider__profile">
-                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/rewiews-avatar-3.jpg" alt="Avatar: Temperance Brennan" class="reviews-slider__avatar">
+                  <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/rewiews-avatar-3.jpg" alt="Avatar: Temperance Brennan" class="reviews-slider__avatar lazyload">
                   <h3 class="reviews-slider__username">Temperance Brennan</h3>
                   <span class="reviews-slider__date">Stayed 18 Nov, 2019</span>
                   <div class="reviews-slider__rating">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
-                    <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
+                    <img src="img/star.svg" alt="star" class="star-img">
                   </div>
                 </div>
                 <!-- /.reviews-slider__profile -->
@@ -550,30 +552,30 @@
       <div class="activities-wrapper">
 
         <div class="card activities__card" data-aos="zoom-in-down" data-aos-delay="100">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-1.jpg" alt="The curious corner of chamarel" class="card__image lazyload">
           <h3 class="card__title">The curious corner of chamarel</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
   
         <div class="card activities__card" data-aos="zoom-in-down" data-aos-delay="300">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-2.jpg" alt="Gymkhana club golf course" class="card__image lazyload">
           <h3 class="card__title">Gymkhana club golf course</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
   
         <div class="card activities__card" data-aos="zoom-in-down" data-aos-delay="500">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-3.jpg" alt="Tamarind falls hiking trip - full day" class="card__image lazyload">
           <h3 class="card__title">Tamarind falls hiking trip - full day</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
   
         <div class="card activities__card" data-aos="zoom-in-down" data-aos-delay="700">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/activities-4.jpg" alt="The blue marine discovery quest" class="card__image lazyload">
           <h3 class="card__title">The blue marine discovery quest</h3>
-          <button class="button card__button">Book Now</button>
+          <button data-toggle="modal" class="button card__button">Book Now</button>
         </div>
         <!-- /.card -->
 
@@ -589,7 +591,7 @@
     <div class="container">
       <div class="footer-wrapper">
         <a href="index.html" class="footer__logo-link">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/vertical.svg" alt="Logo: Best Tour Plan" class="logo footer__logo">
+          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/vertical.svg" alt="Logo: Best Tour Plan" class="logo footer__logo lazyload">
         </a>
         <div class="footer__lists footer__lists--categories">
           <h3 class="footer__title">All Categories</h3>
@@ -667,13 +669,13 @@
           <h3 class="footer__title footer__title--network">Social Network</h3>
           <div class="footer__social">
             <a href="#" class="footer__icon-link">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/facebook.svg" alt="Icon: facebook" class="footer__icon">
+              <img src="img/facebook.svg" alt="Icon: facebook" class="footer__icon">
             </a>
             <a href="#" class="footer__icon-link">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/youtube.svg" alt="Icon: youtube" class="footer__icon">
+              <img src="img/youtube.svg" alt="Icon: youtube" class="footer__icon">
             </a>
             <a href="#" class="footer__icon-link">
-              <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/instagram.svg" alt="Icon: instagram" class="footer__icon">
+              <img src="img/instagram.svg" alt="Icon: instagram" class="footer__icon">
             </a>
           </div>
         </div>
@@ -709,27 +711,32 @@
           <ul class="footer__list">
             <li class="footer__item footer__item--contact">
               <div class="footer__contact-icon-wrapper">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/map-marker.svg" alt="Icon: map" class="footer__contact-icon">
+                <img src="img/map-marker.svg" alt="Icon: map" class="footer__contact-icon">
               </div>
               <span class="footer__info">9748 Blossom Hill Rd undefined Lansing, Idaho 68545 United States</span>
             </li>
             <!-- /.footer__item -->
             <li class="footer__item footer__item--contact">
               <div class="footer__contact-icon-wrapper">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/footer-phone-call.svg" alt="Icon: phone call" class="footer__contact-icon">
+                <img src="img/footer-phone-call.svg" alt="Icon: phone call" class="footer__contact-icon">
               </div>
               <span class="footer__info">
-                Tel (business hours) : 269 1500 <br>
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm) <br>
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                Tel (business hours) : 
+                <a href="tel: 269 1500" class="footer__item-link">269 1500</a> <br>
+                Tel (hotline) Monday - Saturday:
+                <a href="tel: 269 1500" class="footer__item-link">52-56-61-38</a>  (08:00 am – 20:00 pm) <br>
+                Tel (hotline) Sunday:
+                <a href="tel: 269 1500" class="footer__item-link">52-56-61-38</a>  (08:00 am – 14:00 pm)
               </span>
             </li>
             <!-- /.footer__item -->
             <li class="footer__item footer__item--contact">
               <div class="footer__contact-icon-wrapper">
-                <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/email.svg" alt="Icon: email" class="footer__contact-icon">
+                <img src="img/email.svg" alt="Icon: email" class="footer__contact-icon">
               </div>
-              <span class="footer__info">cherly.lawson@example.com</span>
+              <span class="footer__info">
+                <a href="mailto:cherly.lawson@example.com" class="footer__item-link">cherly.lawson@example.com</a>
+              </span>
             </li>
             <!-- /.footer__item -->
           </ul>
@@ -782,7 +789,7 @@
       <h3 class="modal-dialog__title modal-dialog__title--form">Send us a message</h3>
       <form action="send.php" method="POST" class="modal-dialog__form form">
         <a href="#" class="modal-dialog__close" data-backdrop="static" tabindex="-1" data-keyboard="true">
-          <img src="data:image/png;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=" data-src="img/close.svg" alt="icon: close" class="modal-dialog__close-image">
+          <img src="img/close.svg" alt="icon: close" class="modal-dialog__close-image">
         </a>
         <input class="input modal-dialog__input modal-dialog__input--name" type="text" placeholder="Your Full Name*" name="name" required minlength="2">
         <input class="input modal-dialog__input modal-dialog__input--phone phone-mask" type="tel" placeholder="Phone Number*" name="phone" required>
@@ -796,13 +803,37 @@
   </div>
 
 
+  <script>
+    function initMap() {
+    var pos = {lat:38.910062, lng:1.434717};
+    var opt = {
+      center: pos,
+      zoom: 15,
+    };
+    var map = new google.maps.Map(document.getElementById('map'), opt);
+    var marker = new google.maps.Marker({
+      position: pos,
+      map: map
+    });
+  }
+  
+    function init() {
+      var imgDefer = document.getElementsByTagName('img');
+      for (var i=0; i<imgDefer.length; i++) {
+      if(imgDefer[i].getAttribute('data-src')) {
+      imgDefer[i].setAttribute('src',imgDefer[i].getAttribute('data-src'));
+      } } }
+    window.onload = init;
+
+  </script>
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script src="//cdn.iframe.ly/embed.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/parallax.js-1.5.0/parallax.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/aos.js"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBt8Jmg6IyovqpSoQh-eMVkS9Gjkv6GAvc&callback=initMap" ></script>
   <script src="js/main.js"></script>
 </body>
 </html>
